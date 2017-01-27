@@ -1,5 +1,7 @@
 The following document is a deployment guide for a KNN implementation of predicting a given flower species. 
 
+Major thanks to Sinan Ozdemir for [his repo](https://github.com/sinanuozdemir/sinan_iris) on this. He built this app; I wrote this deployment guide.
+
 # Deployment Guide
 
 We will be deploying your very own KNN predictor for the iris dataset. The final product will look like [this](ga-iris.herokuapp.com).
@@ -59,9 +61,9 @@ Heroku config:set BUILDPACK_URL=https://github.com/thenovices/heroku-buildpack-s
 
 Now we can deploy! We'll push to the Heroku master branch (not origin master), and the build will begin! It will take a little while on the first time. Go to your Heroku app dashboard, and watch the build complete. In the upper righthand corner, you will have an option to "Open app"
 
-'''
+```
 Git push heroku master
-'''
+```
 
 ## Footnote: killing that port
 
