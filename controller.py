@@ -9,10 +9,10 @@ from sklearn import datasets
 app = Flask(__name__)
 
 
-print "loading my model"
+print("loading my model")
 with open('model.pkl', 'rb') as handle:
     machine_learning_model = pickle.load(handle)
-print "model loaded"
+print("model loaded")
 
 
 # Initialize Form Class
@@ -26,7 +26,7 @@ class theForm(Form):
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
-    print session
+    print(session)
     form = theForm(csrf_enabled=False)
     if form.validate_on_submit():  # activates this if when i hit submit!
         # Retrieve values from form
